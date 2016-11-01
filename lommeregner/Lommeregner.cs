@@ -19,10 +19,44 @@ namespace lommeregner
         //int number1 = Int32.Parse(input1);
 
 
-        public int input(string input)
+       public int plus()
         {
-            int number = Int32.Parse(input);
-            return number;
+            result = input1 + input2;
+            return result;
         }
+
+        public int minus()
+        {
+            result = input1 - input2;
+            return result;
+        }
+
+        public int gange()
+        {
+            result = input1 * input2;
+            return result;
+        }
+
+
+
+        public int division()
+        {
+            result = input1 / input2;
+            return result;
+        }
+
+        public void calculate()
+        {          
+            if (OPR == "+")
+            {
+                Console.WriteLine(plus()); 
+            }
+            else if (OPR == "-")
+            {
+                Console.WriteLine(minus()); 
+            } 
+        }
+
+
     }
 }
