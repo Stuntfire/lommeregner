@@ -37,8 +37,6 @@ namespace lommeregner
             return result;
         }
 
-
-
         public int division()
         {
             result = input1 / input2;
@@ -55,7 +53,17 @@ namespace lommeregner
             {
                 Console.WriteLine(minus()); 
             } 
+            else if (OPR == "*")
+            {
+                Console.WriteLine(gange());
+            }
+            else if (OPR == "/")
+            {
+                Console.WriteLine(division());
+            }
+            else Console.WriteLine("Indtast venligst korrekt operator.");
         }
+
 
 
     }
